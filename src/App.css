@@ -5,16 +5,16 @@
 }
 
 body {
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 300;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 400;
   line-height: 1.4;
   letter-spacing: 0.5px;
   font-size: 18px;
 }
 
 h1, h2, h3 {
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 400;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 700;
   letter-spacing: 1px;
 
 }
@@ -28,21 +28,37 @@ a {
 }
 
 
-.btn-primary {
-  display: inline-block;
-  border: none;
-  background: #8F93FF;
-  color: #fff;
-  padding: 7px 20px;
-  margin-left: 12px;
+.night-bg-mobile {
+  background-image: url('./components/images/bg-mobile-dark.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 14rem;
+}
+
+.dark-bg {
+  background-color: #15151f;
+}
+
+.night-bg-desktop {
+  background-image: url('./components/images/bg-desktop-dark.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 16rem;
+}
+
+
+.circle-toggle {
+  background: url("./components/images/circle.png") no-repeat;
+}
+
+.circle-toggle:hover {
+  background: url("./components/images/circle-hover.png") no-repeat;
+}
+
+
+
+
+.cross {
+  background: url("./components/images/icon-cross.svg") no-repeat;
   cursor: pointer;
-  box-shadow: 0px 4px 7px #888888;
-}
-
-.btn-primary:hover {
-  background: #777AC7;
-}
-
-.btn-primary:active {
-  background: #777AC7;
 }

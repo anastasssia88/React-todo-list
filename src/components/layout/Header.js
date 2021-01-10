@@ -1,25 +1,21 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import CurrentDate from '../CurrentDate';
 
 function Header() {
     return (
-        <header style={headerStyle}>
-            <h1>All Tasks</h1>
-            <Link style={linkStyle} to="/">Home</Link> | <Link style={linkStyle} to="/About">About</Link>
+        <header className="flex night-bg-desktop text-white text-center text-md">
+            <h1 className="pl-14 py-14 uppercase text-xl sm:py-12 sm:text-2xl sm:pl-96">t o d o</h1>
+            <div className="pr-14 py-14 ml-auto sm:py-12 sm:pr-96">
+                <CurrentDate className="py-12 pr-96 ml-auto"/>
+            </div>
         </header>
+
+        
     )
 }
 
-const linkStyle = {
-    color: '#fff',
-    textDecoration: 'none',
-  }
 
-const headerStyle = {
-    backgroundImage: 'linear-gradient(to right, #3780E7 , #8F93FF)',
-    color: '#fff',
-    textAlign: 'center',
-    padding: '15px',
-  }
+
+
 
 export default Header;

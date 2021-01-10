@@ -16,22 +16,19 @@ export class AddTodo extends Component {
 
     render() {
         return (
-            <form className="mb-4" onSubmit={this.onSubmit} style={{ display: 'flex' }}>
-                <input
-                    type="text"
-                    name="title"
-                    style={{ flex: '10', padding: '5px' }}
-                    placeholder="Add Todo..."
-                    value = {this.state.title}
-                    onChange={this.onChange}
-                />
-                <input 
-                    type="submit"
-                    value="Add"
-                    className="btn btn-primary"
-                    style={{ flex: '1'}}
-                />
-            </form>
+            <div>
+                <form className="-mt-28 mb-6 md:-mt-32" onSubmit={this.onSubmit} style={{ display: 'flex' }}>
+                    <input
+                        type="text"
+                        name="title"
+                        className="px-3 py-3 bg-gray-800 text-gray-400 rounded text-base"
+                        style={{ flex: '10', padding: '5px' }}
+                        placeholder="Create a new todo..."
+                        value = {this.state.title}
+                        onChange={this.onChange}
+                    />
+                </form>
+            </div>
         )
     }
 }
