@@ -17,7 +17,7 @@ export class AddTodo extends Component {
     render() {
         return (
             <div>
-                <form className="-mt-28 mb-6 md:-mt-32" onSubmit={this.onSubmit} style={{ display: 'flex' }}>
+                <form autocomplete="off" className="-mt-28 mb-6 md:-mt-32" onSubmit={this.onSubmit} style={{ display: 'flex' }}>
                     <input
                         type="text"
                         name="title"
